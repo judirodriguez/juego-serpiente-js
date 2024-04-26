@@ -1,0 +1,78 @@
+/* Establece la fuente para todo el documento. El asterisco quiere decir que se aplique a todo */
+* {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+/* Limita el ancho máximo de los elementos a 500px */
+#board, .boardInfo {
+    max-width: 500px;
+}
+
+/* Estilo para el elemento*/
+#board {
+    /* Usa un diseño de cuadrícula con 10 columnas iguales, cada una ocupa una fraccion igual del espacio disponible en el contenedor de la cuadricula*/
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+/* Estilo para los elementos*/
+#start, .boardInfo {
+    /* Establece el tamaño de fuente a 25px */
+    font-size: 25px;
+}
+
+/* Oculta el elemento con ID 'gameOver' */
+#gameOver {
+    display: none;
+}
+
+/* Estilo para el elemento con clase 'boardInfo' */
+.boardInfo {
+    /* Usa un diseño flexbox con espacio entre elementos */
+    display: flex;
+    justify-content: space-between;
+    /* Margen superior de 10px */
+    margin-top: 10px;
+}
+
+/* Estilo para el elemento con ID 'start' */
+#start {
+    /* Fondo colorido */
+    background-color: #f35a69;
+    /* Sin borde */
+    border: none;
+    /* Texto en color blanco */
+    color: white;
+}
+
+/* Estilo para el elemento con ID 'scoreBoard' */
+#scoreBoard {
+    /* Usa un diseño inline-flex */
+    display: inline-flex;
+}
+
+/* Estilo para los elementos con clase 'square' */
+.square {
+    /* Relación de aspecto 1:1 */
+    aspect-ratio: 1;
+}
+
+/* Estilo para los elementos con clase 'emptySquare' */
+.emptySquare {
+    /* Fondo de color */
+    background-color: #6d71b5;
+}
+
+/* Estilo para los elementos con clase 'snakeSquare' */
+.snakeSquare {
+    /* Fondo de color y borde */
+    background-color: #e3e773;
+    border: 1px solid #000;
+}
+
+/* Estilo para los elementos con clase 'foodSquare' */
+.foodSquare {
+    /* Fondo de color y borde */
+    background-color: #55e7e7;
+    border: 1px solid #000;
+}
